@@ -1,8 +1,16 @@
 {
-  "name": "ui-kit-react-abra-kadabra",
+  "name": "@piligrimstas/ui-kit-react-abra-kadabra",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/piligrimstas"
+  },
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
+  "module": "dist/cjs/index.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
